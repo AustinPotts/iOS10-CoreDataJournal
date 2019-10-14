@@ -10,22 +10,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Entries-->
+        <!--Spells & Secrets-->
         <scene sceneID="ftm-7d-EYl">
             <objects>
                 <tableViewController id="iKj-se-Ap2" customClass="EntriesTableViewController" customModule="iOS10_JournalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8sD-f5-6ZP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.93211322839999999" green="0.79927693190000004" blue="0.66581321660000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Cdj-fg-mJo">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EntryCell" id="Cdj-fg-mJo">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cdj-fg-mJo" id="Ac7-E0-pKA">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.93211322839999999" green="0.79927693190000004" blue="0.66581321660000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="7zu-a0-Tal" kind="show" identifier="ShowEntryDetailSegue" id="TpU-WP-NsN"/>
                                 </connections>
@@ -36,7 +37,7 @@
                             <outlet property="delegate" destination="iKj-se-Ap2" id="IVU-f5-YgA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Entries" id="5Ai-d5-fy9">
+                    <navigationItem key="navigationItem" title="Spells &amp; Secrets" id="5Ai-d5-fy9">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pEX-mB-kr3">
                             <connections>
                                 <segue destination="7zu-a0-Tal" kind="show" identifier="AddEntrySegue" id="7fx-RD-bCE"/>
@@ -48,7 +49,7 @@
             </objects>
             <point key="canvasLocation" x="1204.3478260869565" y="150"/>
         </scene>
-        <!--Entry Detail-->
+        <!--Entry-->
         <scene sceneID="AkP-cL-tjX">
             <objects>
                 <viewController id="7zu-a0-Tal" customClass="EntryDetailViewController" customModule="iOS10_JournalApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,7 +88,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.59343960910000004" green="0.90613765729999995" blue="0.84770783920000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93211322836598975" green="0.79927693186808602" blue="0.66581321657309067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="V3y-Wx-4W5" firstAttribute="leading" secondItem="1bc-8i-mAF" secondAttribute="leading" constant="20" id="04t-lU-Y2P"/>
                             <constraint firstItem="h0G-V7-dPb" firstAttribute="leading" secondItem="1bc-8i-mAF" secondAttribute="leading" constant="20" id="4TD-OX-yI5"/>
@@ -102,7 +103,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1bc-8i-mAF"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Entry Detail" id="QbQ-vu-nK1">
+                    <navigationItem key="navigationItem" title="Entry" id="QbQ-vu-nK1">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="o2s-DN-wER">
                             <connections>
                                 <action selector="save:" destination="7zu-a0-Tal" id="0x3-hz-AKQ"/>

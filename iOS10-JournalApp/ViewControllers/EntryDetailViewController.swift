@@ -13,17 +13,43 @@ class EntryDetailViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var entryTextField: UITextView!
     
+    var entry: Entry?
+    var entryController: EntryController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateViews()
     }
+    
     
 
     
     @IBAction func save(_ sender: Any) {
+        
+        if let title = titleTextField.text,
+            let story = entryTextField.text {
+            
+            if let entry = entry {
+                entryController?.updateEntry(entry: entry, title: title, story: story)
+            } else {
+                entryController?.createEntry(with: title, story: story, context: CoreDataStack.share.mainContext)
+            }
+            
+        }
+        
+        navigationController?.popViewController(animated: true)
+        
     }
     
+    func updateViews(){
+        
+        guard isViewLoaded else{return}
+        
+        title = entry?.title ?? "Create Story"
+        titleTextField.text = entry?.title
+        entryTextField.text = entry?.story
+        
+    }
     
 }

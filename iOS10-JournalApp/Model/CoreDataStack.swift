@@ -20,7 +20,7 @@ class CoreDataStack {
     //Create Code Snippet
     lazy var container: NSPersistentContainer = {
         
-        let container = NSPersistentContainer(name: "Tasks")
+        let container = NSPersistentContainer(name: "Entries")
         
         container.loadPersistentStores(completionHandler: { (_, error) in
             if let error = error {
