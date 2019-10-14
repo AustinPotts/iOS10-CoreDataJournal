@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		451884212354F788001E6CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451884202354F788001E6CCD /* AppDelegate.swift */; };
-		451884232354F788001E6CCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451884222354F788001E6CCD /* ViewController.swift */; };
 		451884262354F788001E6CCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451884242354F788001E6CCD /* Main.storyboard */; };
 		451884282354F78A001E6CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451884272354F78A001E6CCD /* Assets.xcassets */; };
 		4518842B2354F78A001E6CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451884292354F78A001E6CCD /* LaunchScreen.storyboard */; };
+		451884362354F952001E6CCD /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451884352354F952001E6CCD /* EntriesTableViewController.swift */; };
+		451884382354F96C001E6CCD /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451884372354F96C001E6CCD /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4518841D2354F788001E6CCD /* iOS10-JournalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS10-JournalApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		451884202354F788001E6CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		451884222354F788001E6CCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		451884252354F788001E6CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		451884272354F78A001E6CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4518842A2354F78A001E6CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4518842C2354F78A001E6CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451884352354F952001E6CCD /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
+		451884372354F96C001E6CCD /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,9 @@
 		451884142354F788001E6CCD = {
 			isa = PBXGroup;
 			children = (
+				451884342354F93C001E6CCD /* Model Controller */,
+				451884332354F937001E6CCD /* Model */,
+				451884322354F92F001E6CCD /* ViewControllers */,
 				4518841F2354F788001E6CCD /* iOS10-JournalApp */,
 				4518841E2354F788001E6CCD /* Products */,
 			);
@@ -55,13 +60,35 @@
 			isa = PBXGroup;
 			children = (
 				451884202354F788001E6CCD /* AppDelegate.swift */,
-				451884222354F788001E6CCD /* ViewController.swift */,
 				451884242354F788001E6CCD /* Main.storyboard */,
 				451884272354F78A001E6CCD /* Assets.xcassets */,
 				451884292354F78A001E6CCD /* LaunchScreen.storyboard */,
 				4518842C2354F78A001E6CCD /* Info.plist */,
 			);
 			path = "iOS10-JournalApp";
+			sourceTree = "<group>";
+		};
+		451884322354F92F001E6CCD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				451884372354F96C001E6CCD /* EntryDetailViewController.swift */,
+				451884352354F952001E6CCD /* EntriesTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		451884332354F937001E6CCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		451884342354F93C001E6CCD /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				451884232354F788001E6CCD /* ViewController.swift in Sources */,
+				451884362354F952001E6CCD /* EntriesTableViewController.swift in Sources */,
+				451884382354F96C001E6CCD /* EntryDetailViewController.swift in Sources */,
 				451884212354F788001E6CCD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
