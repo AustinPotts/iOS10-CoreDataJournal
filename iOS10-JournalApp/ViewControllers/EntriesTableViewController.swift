@@ -10,6 +10,10 @@ import UIKit
 
 class EntriesTableViewController: UITableViewController {
 
+    
+    //Improper 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

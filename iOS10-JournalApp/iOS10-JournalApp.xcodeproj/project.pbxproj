@@ -13,6 +13,10 @@
 		4518842B2354F78A001E6CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451884292354F78A001E6CCD /* LaunchScreen.storyboard */; };
 		451884362354F952001E6CCD /* EntriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451884352354F952001E6CCD /* EntriesTableViewController.swift */; };
 		451884382354F96C001E6CCD /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451884372354F96C001E6CCD /* EntryDetailViewController.swift */; };
+		4518843B2354FA3F001E6CCD /* Entries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 451884392354FA3F001E6CCD /* Entries.xcdatamodeld */; };
+		4518843D2354FAF8001E6CCD /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518843C2354FAF8001E6CCD /* CoreDataStack.swift */; };
+		4518843F2354FB17001E6CCD /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518843E2354FB17001E6CCD /* Entry+Convenience.swift */; };
+		451884412354FBB4001E6CCD /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451884402354FBB4001E6CCD /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		4518842C2354F78A001E6CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		451884352354F952001E6CCD /* EntriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesTableViewController.swift; sourceTree = "<group>"; };
 		451884372354F96C001E6CCD /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		4518843A2354FA3F001E6CCD /* Entries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entries.xcdatamodel; sourceTree = "<group>"; };
+		4518843C2354FAF8001E6CCD /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		4518843E2354FB17001E6CCD /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
+		451884402354FBB4001E6CCD /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,9 @@
 		451884332354F937001E6CCD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4518843E2354FB17001E6CCD /* Entry+Convenience.swift */,
+				4518843C2354FAF8001E6CCD /* CoreDataStack.swift */,
+				451884392354FA3F001E6CCD /* Entries.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +98,7 @@
 		451884342354F93C001E6CCD /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				451884402354FBB4001E6CCD /* EntryController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -162,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4518843D2354FAF8001E6CCD /* CoreDataStack.swift in Sources */,
 				451884362354F952001E6CCD /* EntriesTableViewController.swift in Sources */,
+				451884412354FBB4001E6CCD /* EntryController.swift in Sources */,
 				451884382354F96C001E6CCD /* EntryDetailViewController.swift in Sources */,
+				4518843B2354FA3F001E6CCD /* Entries.xcdatamodeld in Sources */,
+				4518843F2354FB17001E6CCD /* Entry+Convenience.swift in Sources */,
 				451884212354F788001E6CCD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +378,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		451884392354FA3F001E6CCD /* Entries.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4518843A2354FA3F001E6CCD /* Entries.xcdatamodel */,
+			);
+			currentVersion = 4518843A2354FA3F001E6CCD /* Entries.xcdatamodel */;
+			path = Entries.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 451884152354F788001E6CCD /* Project object */;
 }
