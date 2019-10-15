@@ -74,14 +74,14 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3y-Wx-4W5">
-                                <rect key="frame" x="20" y="226" width="115" height="50.5"/>
-                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spell:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3y-Wx-4W5">
+                                <rect key="frame" x="20" y="248.5" width="374" height="47"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h0G-V7-dPb">
-                                <rect key="frame" x="20" y="285" width="374" height="557"/>
+                                <rect key="frame" x="20" y="304" width="374" height="538"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -112,7 +112,7 @@
                         <constraints>
                             <constraint firstItem="V3y-Wx-4W5" firstAttribute="leading" secondItem="1bc-8i-mAF" secondAttribute="leading" constant="20" id="04t-lU-Y2P"/>
                             <constraint firstItem="h0G-V7-dPb" firstAttribute="leading" secondItem="1bc-8i-mAF" secondAttribute="leading" constant="20" id="4TD-OX-yI5"/>
-                            <constraint firstItem="1bc-8i-mAF" firstAttribute="trailing" secondItem="V3y-Wx-4W5" secondAttribute="trailing" constant="279" id="Exf-9f-TLg"/>
+                            <constraint firstItem="1bc-8i-mAF" firstAttribute="trailing" secondItem="V3y-Wx-4W5" secondAttribute="trailing" constant="20" id="Exf-9f-TLg"/>
                             <constraint firstItem="GQf-Xi-rxs" firstAttribute="top" secondItem="MQy-d0-4k2" secondAttribute="bottom" constant="23.5" id="Nyf-MD-YmT"/>
                             <constraint firstItem="MQy-d0-4k2" firstAttribute="leading" secondItem="1bc-8i-mAF" secondAttribute="leading" constant="20" id="ZwU-aa-fuT"/>
                             <constraint firstItem="1bc-8i-mAF" firstAttribute="trailing" secondItem="MQy-d0-4k2" secondAttribute="trailing" constant="20" id="aa5-C7-2xH"/>
@@ -120,7 +120,7 @@
                             <constraint firstItem="1bc-8i-mAF" firstAttribute="trailing" secondItem="GQf-Xi-rxs" secondAttribute="trailing" constant="20" id="eAV-5g-oOG"/>
                             <constraint firstItem="h0G-V7-dPb" firstAttribute="top" secondItem="V3y-Wx-4W5" secondAttribute="bottom" constant="8.5" id="jkf-CT-df0"/>
                             <constraint firstItem="1bc-8i-mAF" firstAttribute="trailing" secondItem="h0G-V7-dPb" secondAttribute="trailing" constant="20" id="oQA-wD-F4D"/>
-                            <constraint firstItem="V3y-Wx-4W5" firstAttribute="top" secondItem="MQy-d0-4k2" secondAttribute="bottom" constant="67.5" id="u2o-ue-JkL"/>
+                            <constraint firstItem="V3y-Wx-4W5" firstAttribute="top" secondItem="MQy-d0-4k2" secondAttribute="bottom" constant="90" id="oaG-xY-srH"/>
                             <constraint firstItem="1bc-8i-mAF" firstAttribute="bottom" secondItem="h0G-V7-dPb" secondAttribute="bottom" constant="20" id="u9t-S3-1VH"/>
                             <constraint firstItem="MQy-d0-4k2" firstAttribute="top" secondItem="1bc-8i-mAF" secondAttribute="top" constant="20" id="vCU-Ze-qgz"/>
                         </constraints>
