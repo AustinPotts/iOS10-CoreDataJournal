@@ -90,14 +90,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="GQf-Xi-rxs">
                                 <rect key="frame" x="20" y="182" width="374" height="50.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iy-sw-wA2">
-                                        <rect key="frame" x="0.0" y="0.0" width="95.5" height="50.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iy-sw-wA2">
+                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="50.5"/>
                                         <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MkT-Ws-DKm">
-                                        <rect key="frame" x="102.5" y="0.0" width="271.5" height="51.5"/>
+                                        <rect key="frame" x="107.5" y="0.0" width="266.5" height="51.5"/>
                                         <segments>
                                             <segment title="🤧"/>
                                             <segment title="🤢"/>
@@ -136,6 +136,7 @@
                     <connections>
                         <outlet property="entryTextField" destination="h0G-V7-dPb" id="gsY-lp-wbg"/>
                         <outlet property="riskLevelSegmentedControl" destination="MkT-Ws-DKm" id="v7m-ot-HMG"/>
+                        <outlet property="titleTextField" destination="j4G-hb-GUv" id="fvY-3C-JMC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCC-aK-eYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
