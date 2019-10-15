@@ -12,6 +12,7 @@ class EntryDetailViewController: UIViewController {
 
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var entryTextField: UITextView!
+    @IBOutlet weak var riskLevelSegmentedControl: UISegmentedControl!
     
     var entry: Entry?
     var entryController: EntryController?

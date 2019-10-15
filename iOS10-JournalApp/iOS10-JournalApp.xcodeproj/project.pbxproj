@@ -32,6 +32,7 @@
 		4518843C2354FAF8001E6CCD /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		4518843E2354FB17001E6CCD /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		451884402354FBB4001E6CCD /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		4518844523564A17001E6CCD /* Entries 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Entries 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,9 +384,10 @@
 		451884392354FA3F001E6CCD /* Entries.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				4518844523564A17001E6CCD /* Entries 2.xcdatamodel */,
 				4518843A2354FA3F001E6CCD /* Entries.xcdatamodel */,
 			);
-			currentVersion = 4518843A2354FA3F001E6CCD /* Entries.xcdatamodel */;
+			currentVersion = 4518844523564A17001E6CCD /* Entries 2.xcdatamodel */;
 			path = Entries.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
