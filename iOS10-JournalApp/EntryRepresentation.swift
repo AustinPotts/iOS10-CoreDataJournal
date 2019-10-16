@@ -12,7 +12,7 @@ import Foundation
 struct EntryRepresentation: Codable {
     
     let title: String
-    let story: String
+    let story: String?
     let risk: String
     let identifier: UUID
     
