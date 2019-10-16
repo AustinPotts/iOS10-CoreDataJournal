@@ -17,6 +17,7 @@
 		4518843D2354FAF8001E6CCD /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518843C2354FAF8001E6CCD /* CoreDataStack.swift */; };
 		4518843F2354FB17001E6CCD /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518843E2354FB17001E6CCD /* Entry+Convenience.swift */; };
 		451884412354FBB4001E6CCD /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451884402354FBB4001E6CCD /* EntryController.swift */; };
+		4518844B23579CF4001E6CCD /* EntryRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4518844A23579CF4001E6CCD /* EntryRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		4518843E2354FB17001E6CCD /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+Convenience.swift"; sourceTree = "<group>"; };
 		451884402354FBB4001E6CCD /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		4518844523564A17001E6CCD /* Entries 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Entries 2.xcdatamodel"; sourceTree = "<group>"; };
+		4518844923579C77001E6CCD /* Entries 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Entries 3.xcdatamodel"; sourceTree = "<group>"; };
+		4518844A23579CF4001E6CCD /* EntryRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +52,7 @@
 		451884142354F788001E6CCD = {
 			isa = PBXGroup;
 			children = (
+				4518844A23579CF4001E6CCD /* EntryRepresentation.swift */,
 				451884342354F93C001E6CCD /* Model Controller */,
 				451884332354F937001E6CCD /* Model */,
 				451884322354F92F001E6CCD /* ViewControllers */,
@@ -176,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4518843D2354FAF8001E6CCD /* CoreDataStack.swift in Sources */,
+				4518844B23579CF4001E6CCD /* EntryRepresentation.swift in Sources */,
 				451884362354F952001E6CCD /* EntriesTableViewController.swift in Sources */,
 				451884412354FBB4001E6CCD /* EntryController.swift in Sources */,
 				451884382354F96C001E6CCD /* EntryDetailViewController.swift in Sources */,
@@ -384,10 +389,11 @@
 		451884392354FA3F001E6CCD /* Entries.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				4518844923579C77001E6CCD /* Entries 3.xcdatamodel */,
 				4518844523564A17001E6CCD /* Entries 2.xcdatamodel */,
 				4518843A2354FA3F001E6CCD /* Entries.xcdatamodel */,
 			);
-			currentVersion = 4518844523564A17001E6CCD /* Entries 2.xcdatamodel */;
+			currentVersion = 4518844923579C77001E6CCD /* Entries 3.xcdatamodel */;
 			path = Entries.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

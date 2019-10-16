@@ -20,13 +20,14 @@ enum RiskCase: String, CaseIterable {
 
 extension Entry {
     
-    @discardableResult convenience init(title: String, story: String, risk: RiskCase, context: NSManagedObjectContext) {
+    @discardableResult convenience init(title: String, story: String, risk: RiskCase, identifier: UUID = UUID(), context: NSManagedObjectContext) {
         
         self.init(context: context)
         
         self.title = title
         self.story = story
         self.risk = risk.rawValue
+        self.identifier = identifier 
         
         
         
