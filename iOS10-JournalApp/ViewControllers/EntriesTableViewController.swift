@@ -91,6 +91,13 @@ class EntriesTableViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else{return }
+        
+        let entry = fetchResultController.object(at: indexPath)
+        
+        entryController.delete(entry: entry)
+    }
 
    
     

@@ -78,8 +78,14 @@ class EntryController {
         
         var tasksToCreate = representationsByID
         
+        //Adding new Background Context
+        let context = CoreDataStack.share.container.newBackgroundContext()
+        
+        context.performAndWait {
+            
+        
         do {
-            let context = CoreDataStack.share.mainContext
+            
             
             let fetchRequest: NSFetchRequest<Entry> = Entry.fetchRequest()
             //Only fetch the tasks with identifiers that are in this identifersToFetch array
@@ -111,11 +117,12 @@ class EntryController {
             
             
             
-            CoreDataStack.share.saveToPersistentStore()
+            CoreDataStack.share.save(context: context)
         } catch {
             NSLog("Error fetching tasks from persistence store: \(error)")
             
         }
+     }
         
         
     }
@@ -164,12 +171,36 @@ class EntryController {
     }
 
     
+    func deleteEntryFromServer(_ entry: Entry, completion: @escaping()-> Void = {}) {
+        
+        guard let identifer = entry.identifier else {
+            completion()
+            return
+        }
+        
+        let requestURL = baseURL.appendingPathComponent(identifer.uuidString).appendingPathExtension("json")
+        
+        var request = URLRequest(url: requestURL)
+        request.httpMethod = HTTPMethod.delete.rawValue
+        
+        URLSession.shared.dataTask(with: request) { (data, _, error) in
+            if let error = error {
+                NSLog("Error deleting Task from server: \(error)")
+                completion()
+                return
+            }
+            
+            completion()
+            }.resume()
+        
+    }
+    
     
     
     
     func createEntry(with title: String, story: String, risk: RiskCase, context: NSManagedObjectContext) {
        let entry = Entry(title: title, story: story, risk: risk, context: context)
-        CoreDataStack.share.saveToPersistentStore()
+        CoreDataStack.share.save()
         putEntry(entry: entry)
     }
     
@@ -179,8 +210,16 @@ class EntryController {
         entry.risk = risk.rawValue 
         
         
-        CoreDataStack.share.saveToPersistentStore()
+        CoreDataStack.share.save()
         putEntry(entry: entry)
+        
+    }
+    
+    func delete(entry: Entry){
+        
+        deleteEntryFromServer(entry)
+        CoreDataStack.share.mainContext.delete(entry)
+        CoreDataStack.share.save()
         
     }
     

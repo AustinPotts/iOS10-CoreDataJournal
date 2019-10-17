@@ -52,7 +52,6 @@
 		451884142354F788001E6CCD = {
 			isa = PBXGroup;
 			children = (
-				4518844A23579CF4001E6CCD /* EntryRepresentation.swift */,
 				451884342354F93C001E6CCD /* Model Controller */,
 				451884332354F937001E6CCD /* Model */,
 				451884322354F92F001E6CCD /* ViewControllers */,
@@ -93,6 +92,7 @@
 		451884332354F937001E6CCD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4518844A23579CF4001E6CCD /* EntryRepresentation.swift */,
 				4518843E2354FB17001E6CCD /* Entry+Convenience.swift */,
 				4518843C2354FAF8001E6CCD /* CoreDataStack.swift */,
 				451884392354FA3F001E6CCD /* Entries.xcdatamodeld */,
